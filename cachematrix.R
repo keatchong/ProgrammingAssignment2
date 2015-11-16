@@ -5,7 +5,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-        # testig send file to github
+        # testig send file to github trial 2
 
 }
 
