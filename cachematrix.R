@@ -1,4 +1,4 @@
-str## The below two functions would enable 
+## The below two functions would enable 
 ## 1) Creation of a special 'matrix' object that can cache its inverse
 ## (Matrix supplied is asummed to be always invertible)
 ## 2) Compute inverse of the matrix object from 1) and save it to cache or retrieve 
