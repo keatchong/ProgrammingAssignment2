@@ -1,4 +1,4 @@
-## The below two functions would enable 
+str## The below two functions would enable 
 ## 1) Creation of a special 'matrix' object that can cache its inverse
 ## (Matrix supplied is asummed to be always invertible)
 ## 2) Compute inverse of the matrix object from 1) and save it to cache or retrieve 
@@ -22,6 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get, 
              setsolve = setsolve,
              getsolve = getsolve)
+
 }
 
 ## this function get the inverse matrix of the 'special' matrix created by 
@@ -29,8 +30,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## generated.If yes, it gets the inverse from cache and skips the computation
 ## Otherwise, it computes the inverse using solve function and set the value
 ## in the cache via setsolve function.
-
 cacheSolve <- function(x, ...) {
+
         s <- x$getsolve()
         if (!is.null(s)) {
                 message("getting cached data ")
@@ -40,4 +41,5 @@ cacheSolve <- function(x, ...) {
         s <- solve(data)
         x$setsolve(s)
         s
+
 }
